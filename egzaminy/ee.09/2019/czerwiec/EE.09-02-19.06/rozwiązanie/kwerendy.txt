@@ -1,0 +1,11 @@
+kw1:
+    SELECT `samochody`.`marka`, `samochody`.`model` FROM `samochody` WHERE `samochody`.`kolor` = "czerwony";
+
+kw2:
+    UPDATE `samochody` SET `samochody`.`stan` = "dobry" WHERE `samochody`.`rocznik` = 2003;
+
+kw3:
+    CREATE USER 'andrzej'@'localhost' IDENTIFIED VIA mysql_native_password USING 'andrzej1@';
+
+kw4:
+    REVOKE ALL PRIVILEGES ON *.* FROM 'andrzej'@'localhost'; REVOKE GRANT OPTION ON *.* FROM 'andrzej'@'localhost'; GRANT SELECT, UPDATE ON *.* TO 'andrzej'@'localhost' REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;

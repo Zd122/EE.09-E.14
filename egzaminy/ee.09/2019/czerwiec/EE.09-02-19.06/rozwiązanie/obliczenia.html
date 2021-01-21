@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stacja paliw</title>
+
+        <link rel="stylesheet" href="styl3.css">
+    </head>
+    <body>
+
+        <div id="banner">
+            <div class="banner-left">
+                <h1>Stacja paliw</h1>
+            </div>
+            <div class="banner-right">
+                <a href="stacja.html"><img src="home.png"></a>
+                <a href="obliczenia.html"><img src="znak.png"></a>
+            </div>
+        </div>
+
+        <div id="content">
+            <h3>Oblicz koszt paliwa</h3>
+            <span>Rodzaj paliwa (1-benzyna, 2-olej napędowy):</span><br/>
+            <input type="number" id="type"><br/>
+        
+            <span>ile litrów</span><br/>
+            <input type="number" id="count"><br/>
+
+            <button onclick="calculate()">OBLICZ</button>
+            <p id="res"></p>
+        </div>
+
+        <div id="blok">
+            <div class="blok-left">
+                <a href="kwerendy.txt" download>Pobierz kwerendy</a>
+            </div>
+            <div class="blok-right">
+                <img src="samochod.png" alt="samochód">
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>Stronę wykonał: 0125******* (Kozicki Paweł)</p>
+        </div>
+
+        <script>
+            function calculate(){
+                var type = document.getElementById("type").value;
+                var count = document.getElementById("count").value;
+
+                if(type == 1){
+                    var res = count*4;
+                }else if(type == 2){
+                    var res = count*3.5;
+                }else{
+                    var res = 0;
+                }
+
+                document.getElementById("res").innerHTML = "koszt paliwa: " + res + "zł";
+            }
+        </script>
+        
+    </body>
+</html>

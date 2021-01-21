@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wędkowanie - moje hobby</title>
+
+        <link rel="stylesheet" href="styl5.css">
+    </head>
+    <body>
+
+        <div id="header">
+            <div class="header-left">
+                <img src="zawody.jpg" alt="zawody wędkarskie">
+            </div>
+            <div class="header-center">
+                <h1>Zawody Wędkarskie</h1>
+            </div>
+            <div class="header-right">
+                <a href="kwerendy.txt" download>Pobierz plik</a>
+            </div>
+        </div>
+
+        <div id="content">
+            <h2>Dodaj nowe zawody wędkarskie</h2>
+            <form action="zgloszenie.php" method="POST">
+                <span>Łowisko: </span><br/>
+                <input type="number" name="lowisko"><br/>
+
+                <span>Data (rrrr-mm-dd): </span><br/>
+                <input type="text" name="data"><br/>
+
+                <span>Sędzia: </span><br/>
+                <input type="text" name="sedzia"><br/>
+
+                <input type="reset" value="WYCZYŚĆ">
+                <input type="submit" value="DODAJ">
+            </form>
+
+            <h2>Łowiska</h2>
+            <ol>
+                <li>Zalew Węgrowski</li>
+                <li>Zbiornik Bukówka</li>
+                <li>Jeziorko Bartbetowskie</li>
+                <li>Warta-Obrzycko </li>
+            </ol>
+        </div>
+        
+        <div id="footer">
+            <p>Stronę wykonał: 0125******* (Kozicki Paweł)</p>
+        </div>
+        
+    </body>
+</html>

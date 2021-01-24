@@ -1,0 +1,11 @@
+kw1:
+    SELECT `matematycy`.`nazwisko`, `matematycy`.`rok_urodzenia` FROM `matematycy` WHERE `matematycy`.`rok_urodzenia` < 1800;
+
+kw2:
+    SELECT `matematycy`.`id`, `matematycy`.`imie`, `matematycy`.`nazwisko` FROM `matematycy` WHERE `matematycy`.`liczba_publikacji` BETWEEN 5 AND 20;
+
+kw3:
+    SELECT MAX(`matematycy`.`liczba_publikacji`) FROM `matematycy` WHERE `matematycy`.`rok_urodzenia` > 1800;
+
+kw4:
+    DROP TABLE `typy`;

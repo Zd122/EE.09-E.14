@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ciągi liczbowe</title>
+
+        <link rel="stylesheet" href="styl2.css">
+    </head>
+    <body>
+
+        <div id="banner">
+            <div class="banner-1">
+                <h2>Poznaj Ciągi Liczbowe</h2>
+            </div>
+            <div class="banner-2">
+                <a href="liczby.html"><h5>Ciągi arytmetyczne</h5></a>
+            </div>
+            <div class="banner-3">
+                <a href="fib.html"><h5>Ciąg Fibonacciego</h5></a>
+            </div>
+            <div class="banner-4">
+                <img src="obraz1.png" alt="Fibonacci">
+            </div>
+        </div>
+
+        <div id="cont">
+            <div class="cont-left">
+                <ol>
+                    <li>ciągi arytmetyczne</li>
+                    <li>ciągi geometryczne</li>
+                    <li>ciąg Fibonacciego</li>
+                </ol>
+            </div>
+            <div class="cont-right">
+                <h2>Generowanie ciągu arytmetycznego</h2>
+
+                <span>Pierwszy wyraz A1: </span>
+                <input type="number" id="a1"><br/>
+
+                <span>Różnica ciągu R: </span>
+                <input type="number" id="r"><br/>
+
+                <span>Liczba wyrazów w ciągu N: </span>
+                <input type="number" id="n"><br/>
+
+                <button onclick="gen()">Generuj Ciąg</button>
+
+                <p id="wyn"></p>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>Autor: 0125******* (Kozicki Paweł)</p>
+        </div>
+        
+        <script>
+
+            function gen(){
+                var res = [];
+
+                var a1 = parseInt(document.getElementById("a1").value);
+                var r = parseInt(document.getElementById("r").value);
+                var n = parseInt(document.getElementById("n").value);
+
+                var wyn = document.getElementById("wyn");
+                wyn.innerHTML = "Ciąg arytmetyczny zawiera wyrazy: "
+
+                for(var i=1; i<=n; i++){
+                    if(i != 1){
+                        res[i] = a1+(i-1)*r;
+                    }else{
+                        res[i] = a1;
+                    }
+
+                    wyn.innerHTML = wyn.innerHTML + res[i] + ", ";
+
+                }
+
+            }
+
+        </script>
+
+    </body>
+</html>

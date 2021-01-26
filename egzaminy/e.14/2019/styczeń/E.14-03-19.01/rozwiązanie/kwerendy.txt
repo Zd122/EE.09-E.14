@@ -1,0 +1,11 @@
+kw1:
+    SELECT `filmy`.`tytul`, `filmy`.`rok`, `filmy`.`ocena` FROM `filmy` WHERE `filmy`.`gatunki_id` = 5;
+
+kw2:
+    SELECT `filmy`.`id`, `filmy`.`tytul`, `rezyserzy`.`imie`, `rezyserzy`.`nazwisko` FROM `filmy`, `rezyserzy` WHERE `filmy`.`rezyserzy_id` = `rezyserzy`.`id`;
+
+kw3:
+    SELECT `filmy`.`id`, `filmy`.`tytul` FROM `filmy` WHERE `filmy`.`rok` = 2017 AND `filmy`.`ocena` = 6;
+
+kw4:
+    UPDATE `rezyserzy` SET `imie` = 'Francis Ford' WHERE `rezyserzy`.`id` = 8;

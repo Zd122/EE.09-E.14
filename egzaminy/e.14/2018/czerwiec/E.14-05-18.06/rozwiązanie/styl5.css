@@ -1,0 +1,53 @@
+#banner{
+    background-color: #1C59A7;
+    color: white;
+    text-align: center;
+    height: 80px;
+    
+}
+
+.cont-left{
+    background-color: #3A70B5;
+    width: 33%;
+    height: 200px;
+
+    float: left;
+}
+
+.cont-center{
+    background-color: #5A8AC8;
+    width: 33%;
+    height: 200px;
+
+    float: left;
+}
+
+.cont-right{
+    background-color: #86ACDD;
+    text-align: center;
+    width: 34%;
+    height: 200px;
+
+    float: left;
+}
+
+.bottom{
+    background-color: #86ACDD;
+    text-align: center;
+    height: 300px;
+    
+    clear: both;
+}
+
+#footer{
+    background-color: #1C59A7;
+    color: white;
+
+    margin-top: -16px; /* drobna improwizacja :> */
+}
+
+.cont-right a{
+    background-color: yellow;
+    color: blue;
+    padding: 10px;
+}

@@ -1,0 +1,73 @@
+body{
+    font-family: Garamond;
+}
+
+.left{
+    width: 25%;
+    float: left;
+    margin-top: 23px;
+}
+
+.right{
+    width: 75%;
+    float: right;
+}
+
+.offert{
+    height: 500px;
+    width: 100%;
+    background-color: lavender;
+}
+
+.img{
+    height: 300px;
+    width: 100%;
+    background-color: lavender;
+}
+
+.header{
+    height: 150px;
+    width: 100%;
+    background-color: indigo;
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    line-height: 150px;
+}
+
+.cont{
+    height: 650px;
+    width: 100%;
+    background-color: lavender;
+    font-size: 200%;
+    text-align: center;
+}
+
+.cont-1{
+    height: 650px;
+    width: 100%;
+    background-color: lavender;
+    font-size: 200%;
+    text-align: center;
+    margin-top: -40px;
+}
+
+.footer{
+    background-color: indigo;
+    color: white;
+    text-align: right;
+    clear: both;
+}
+
+ul{
+    list-style-type: square;
+}
+
+img{
+    margin: 10px;
+}
+
+img:hover{
+    padding: 4px;
+    border: 1px solid indigo; 
+}

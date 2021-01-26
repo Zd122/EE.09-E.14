@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Usługi kosmetyczne</title>
+
+        <link rel="stylesheet" href="styl.css">
+    </head>
+    <body>
+
+        <div id="container">
+            <div class="left">
+                <div class="offert">
+                    <h2>W ofercie</h2>
+                    <ul>
+                        <li><a href="twarz.html">Zabiegi na twarz</a>
+                            <ol>
+                                <li>Piling</li>
+                                <li>Maska</li>
+                                <li>Regulacja brwi</li>
+                            </ol>
+                        </li>
+                        <li>Mazaż</li>
+                        <li>Diety oczyszczające</li>
+                    </ul>
+                    <a href="index.html">Do strony głównej</a>
+                </div>
+                <div class="img">
+                    <img src="obraz1.jpg" alt="Kosmetyczka">
+                </div>
+            </div>
+            <div class="right">
+                <div class="header">
+                    <h1>Salon Kosmetyczny</h1>
+                </div>
+                <div class="cont-1">
+                    <h2>Sprawdź cenę swojej wizyty</h2>
+                    <input type="checkbox" id="piling">Piling<br/>
+                    <input type="checkbox" id="maska">Maska<br/>
+                    <input type="checkbox" id="masaz">Masaż<br/>
+                    <input type="checkbox" id="reg">Regulacja brwi<br/>
+                    <button id="check" onclick="sum()">Sprawdź cenę</button>
+
+                    <p id="suma"></p>
+
+                </div>
+            </div>
+            <div class="footer">
+                <p>Autor: 0125_______</p>
+            </div>
+        </div>
+
+        <script>
+            function sum(){
+                const piling = document.getElementById('piling');
+                const maska = document.getElementById('maska');
+                const masaz = document.getElementById('masaz');
+                const reg = document.getElementById('reg');
+
+                var sum = 0;
+
+                if(piling.checked){sum += 45;}
+                if(maska.checked){sum += 30;}
+                if(masaz.checked){sum += 20;}
+                if(reg.checked){sum += 5;}
+                document.getElementById("suma").innerHTML = `Cena zabiegów: ${sum}zł`;
+            }
+        </script>
+        
+    </body>
+</html>

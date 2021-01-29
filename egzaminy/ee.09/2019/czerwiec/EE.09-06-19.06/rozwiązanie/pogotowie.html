@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pogotowie Ratunkowe</title>
+
+        <link rel="stylesheet" href="styl5.css">
+    </head>
+    <body>
+
+        <div id="banner">
+            <div class="banner-left">
+                <img src="obraz.jpg" alt="pogotowie">
+            </div>
+            <div class="banner-center">
+                <h1>Pogotowie<br/>Ratunkowe</h1>
+            </div>
+            <div class="banner-right">
+                <p>Kontakt:<br/> 022 222 11 333</p>
+            </div>
+        </div>
+
+        <div id="cont">
+            <h2>Dodaj nowe zgłoszenie</h2>
+            <form action="zgloszenie.php" method="POST">
+
+                <span>Numer zespołu ratowniczego:</span><br/>
+                <input type="number" name="ratownicy"><br/>
+
+                <span>Numer dyspozytora:</span><br/>
+                <input type="number" name="dyspozytor"><br/>
+
+                <span>Adres:</span><br/>
+                <input type="text" name="adres" size="100"><br/>
+
+                <input type="reset" value="WYCZYŚĆ">
+                <input type="submit" value="ZGŁOŚ">
+                
+            </form>
+        </div>
+
+        <div id="footer">
+            <div class="footer-left">
+                <h4>Numery alarmowe</h4>
+                <ul>
+                    <li>999</li>
+                    <li>112</li>
+                </ul>
+            </div>
+            <div class="footer-center">
+                <a href="kwerendy.txt" download>Pobierz kwerendy</a>
+            </div>
+            <div class="footer-right">
+                <p>Autor:<br/>0125******* (Kozicki Paweł)</p>
+            </div>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,10 @@
+kw1:
+    SELECT `towary`.`nazwa` FROM `towary` WHERE `towary`.`promocja` = 1;
+
+kw2:
+    SELECT `towary`.`cena` FROM `towary` WHERE `towary`.`nazwa` = "cienkopis";
+
+kw3:
+    
+
+kw4:

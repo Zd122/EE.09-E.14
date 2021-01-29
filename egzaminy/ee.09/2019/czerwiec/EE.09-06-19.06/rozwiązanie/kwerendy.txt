@@ -1,0 +1,11 @@
+kw1:
+    INSERT INTO `zgloszenia` (`id`, `ratownicy_id`, `dyspozytorzy_id`, `adres`, `pilne`, `czas_zgloszenia`) VALUES (NULL, '1', '4', 'Warszawa, Staszica 34/5', 1, '10:24:48')
+
+kw2:
+    SELECT `zgloszenia`.`adres`, `zgloszenia`.`dyspozytorzy_id` FROM `zgloszenia` WHERE `zgloszenia`.`ratownicy_id` = 3;
+
+kw3:
+    CREATE USER 'anna'@'localhost' IDENTIFIED BY 'Anna4!'
+
+kw4:
+    GRANT SELECT, UPDATE, INSERT ON zgloszenia TO 'anna'@'localhost';

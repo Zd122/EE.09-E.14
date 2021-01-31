@@ -25,4 +25,4 @@ Rozwiązane egzaminy EE.09 i E.14
 	* styczeń
 		* [E.14-03-19.01](egzaminy/e.14/2019/styczeń/E.14-03-19.01/) (PHP)
 	* czerwiec
-		* [E.14-01-19.06](egzaminy/e.14/2019/styczeń/E.14-01-19.06/) (PHP)
+		* [E.14-01-19.06](egzaminy/e.14/2019/czerwiec/E.14-01-19.06/) (PHP)

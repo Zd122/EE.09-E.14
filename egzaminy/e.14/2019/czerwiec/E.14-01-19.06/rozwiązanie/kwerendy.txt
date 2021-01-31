@@ -5,6 +5,7 @@ kw2:
     SELECT `towary`.`cena` FROM `towary` WHERE `towary`.`nazwa` = "cienkopis";
 
 kw3:
-    
+    SELECT `dostawcy`.`nazwa`, COUNT(`towary`.`nazwa`) FROM `dostawcy` INNER JOIN `towary` ON `dostawcy`.`id`=`towary`.`idDostawcy` GROUP BY `dostawcy`.`nazwa`
 
 kw4:
+    ALTER TABLE `dostawcy` ADD `e_mail` TEXT;

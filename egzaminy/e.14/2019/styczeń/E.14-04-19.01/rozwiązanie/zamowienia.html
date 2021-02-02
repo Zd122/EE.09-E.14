@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hurtownia</title>
+
+        <link rel="stylesheet" href="styl4.css">
+    </head>
+    <body>
+
+        <div id="header">
+            <div class="header-logo">
+                <img src="logo.png" alt="hurtownia">
+            </div>
+            <div class="header-menu">
+                <a href="index.html">Strona Główna</a>
+                <a href="zamowienia.html">Zamówienia</a>
+                <a href="blog.html">Blog o kawie</a>
+                <a href="http://gatunki-kawy.pl/" target="_blank">Odwiedź także</a>
+            </div>
+        </div>
+
+        <div id="banner">
+            <h1>Hurtownia kawy</h1>
+        </div>
+
+        <div id="cont">
+            <div class="cont-left">
+                <h2>Oferta</h2>
+                <ol>
+                    <li>Kawa palona Arabica</li>
+                    <li>Kawa palona Robusta</li>
+                    <li>Kawa bezkofeinowa</li>
+                    <li class="under">Kawa zielona</li>
+                </ol>
+            </div>
+            <div class="cont-right">
+                <span>Podaj numer kawy:</span><br/>
+                <input type="number" id="number"><br/>
+                <span>Podaj wagę w dekagramach:</span><br/>
+                <input type="number" id="weight"><br/>
+
+                <button onclick="order()">Zamów</button>
+
+                <p id="res"></p>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>Stronę przygotował: 0125******* (Kozicki Paweł)</p>
+        </div>
+
+        <script>
+            
+            function order(){
+                var number = parseInt(document.getElementById("number").value);
+                var weight = parseInt(document.getElementById("weight").value);
+
+                if(number == 1){
+                    var res = weight*5;
+                }else if(number == 2){
+                    var res = weight*7;
+                }else if(number == 3){
+                    var res = weight*6;
+                }else{
+                    var res = 0;
+                }
+
+                document.getElementById("res").innerHTML = "Koszt zamówienia wynosi: " + res + " zł";
+
+            }
+
+        </script>
+        
+    </body>
+</html>

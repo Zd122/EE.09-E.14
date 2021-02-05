@@ -14,6 +14,7 @@ Rozwiązane egzaminy EE.09 i E.14
 	* czerwiec
 		* [EE.09-03-20.06-SG](egzaminy/ee.09/2020/czerwiec/EE.09-03-20.06-SG/) (PHP)
 		* [EE.09-04-20.06-SG](egzaminy/ee.09/2020/czerwiec/EE.09-04-20.06-SG/) (JS)
+		* [EE.09-05-20.06-SG](egzaminy/ee.09/2020/czerwiec/EE.09-05-20.06-SG/) (JS)
 		* [EE.09-06-20.06-SG](egzaminy/ee.09/2020/czerwiec/EE.09-06-20.06-SG/) (PHP)
 * 2021 (wkrótce)
 

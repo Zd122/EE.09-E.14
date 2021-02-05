@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Usługi fryzjerskie</title>
+
+        <link rel="stylesheet" href="styl2.css">
+    </head>
+    <body>
+
+        <div id="cont">
+            <div class="cont-left">
+                <div class="left-1">
+                    <h2><a href="index.html">SALON FRYZJERSKI</a></h2>
+                    <img src="obraz2.jpg" alt="Czesanie">
+                </div>
+                <div class="left-2">
+                    <h3>Dziś promocja na strzyżenie włosów</h3>
+                    <input type="radio" name="usluga" id="krotkie">
+                    <span>Krótkie</span><br/>
+
+                    <input type="radio" name="usluga" id="srednie">
+                    <span>Średnie</span><br/>
+
+                    <input type="radio" name="usluga" id="poldlugie">
+                    <span>Półdługie</span><br/>
+
+                    <input type="radio" name="usluga" id="dlugie">
+                    <span>Długie</span><br/>
+
+                    <button onclick="calc()">Odkryj promocję</button>
+
+                    <p id="res"></p>
+                </div>
+            </div>
+            <div class="cont-right">
+                <div class="right-1">
+                    <h2>MENU</h2>
+                </div>
+                <div class="right-2">
+                    <ol>
+                        <li><a href="fryzura.html">Strzyżenie</a>
+                            <ul>
+                                <li>krótkie</li>
+                                <li>średnie</li>
+                                <li>półdługie</li>
+                                <li>długie</li>
+                            </ul>
+                        </li>
+                        <li>Czesanie</li>
+                        <li>Koloryzacja</li>
+                    </ol>
+                </div>
+                <div class="right-3">
+                    <img src="obraz1.jpg" alt="Fryzjer">
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>Autor: 0125******* (Kozicki Paweł)</p>
+        </div>
+
+        <script>
+
+            function calc(){
+                var krotkie = document.getElementById('krotkie').checked;
+                var srednie = document.getElementById('srednie').checked;
+                var poldlugie = document.getElementById('poldlugie').checked;
+                var dlugie = document.getElementById('dlugie').checked;
+
+                if(krotkie == true){
+                    document.getElementById('res').innerHTML = "Cena strzyżenia: 25";
+                }else if(srednie == true){
+                    document.getElementById('res').innerHTML = "Cena strzyżenia: 30";
+                }else if(poldlugie == true){
+                    document.getElementById('res').innerHTML = "Cena strzyżenia: 40";
+                }else if(dlugie == true){
+                    document.getElementById('res').innerHTML = "Cena strzyżenia: 50";
+                }
+            }
+
+        </script>
+        
+    </body>
+</html>

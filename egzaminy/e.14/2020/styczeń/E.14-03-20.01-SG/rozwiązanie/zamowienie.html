@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fabryka cukierków</title>
+
+        <link rel="stylesheet" href="styl10.css">
+    </head>
+    <body>
+
+        <div id="header">
+            <div class="header-left">
+                <a href="zamowienie.html">Zamów cukierki</a>
+            </div>
+            <div class="header-right">
+                <a href="index.html"><img src="logotyp.png" alt="Nasze logo"></a>
+            </div>
+        </div>
+
+        <div id="banner">
+            <h1>Strefa zamówień</h1>
+        </div>
+
+        <div id="cont">
+            <div class="cont-left">
+                <span>Numer kształtu: </span><br/>
+                <input type="number" id="number"><br/>
+                <span>skomponuj swój kolor, podaj RGB: </span><br/>
+                <span>R: </span>
+                <input type="number" id="R">
+                <span>G: </span>
+                <input type="number" id="G">
+                <span>B: </span>
+                <input type="number" id="B"><br/>
+                <button onclick="order();">Zamówienie</button>
+
+                <p id="res">Twoja zamówienie</p>
+                <button id="color">Kolor</button>
+                
+            </div>
+            <div class="cont-right">
+                <h2>Nasza oferta</h2>
+                <table>
+                    <tr>
+                        <td>Kształty</td>
+                        <td rowspan="2">Możesz zamówić<br/>dowolny kolor cukierka</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ol>
+                                <li>cytryna</li>
+                                <li>liść</li>
+                                <li>banan</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>Autor strony: <b>0125******* (Kozicki Paweł)</b></p>
+        </div>
+
+        <script>
+
+            function order(){
+                var RGB = [], res;
+                var number = document.getElementById("number").value;
+                RGB[0] = document.getElementById("R").value;
+                RGB[1] = document.getElementById("G").value;
+                RGB[2] = document.getElementById("B").value;
+                var resDiv = document.getElementById("res");
+                var colorDiv = document.getElementById("color");
+
+                if(number == 1){
+                    res = "cytryna";
+                }else if(number == 2){
+                    res = "liść";
+                }else if(number == 3){
+                    res = "banan";
+                }else{
+                    res = "inny";
+                }
+
+                resDiv.innerHTML = "Twoje zamówienie to cukierek " + res;
+                colorDiv.style.backgroundColor=`rgb(${RGB[0]}, ${RGB[1]}, ${RGB[2]})`;
+
+
+            }
+
+        </script>
+        
+    </body>
+</html>

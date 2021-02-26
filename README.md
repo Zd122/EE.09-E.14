@@ -31,3 +31,5 @@ Rozwiązane egzaminy EE.09 i E.14
 * 2020
 	* styczeń
 		* [E.14-03-20.01-SG](egzaminy/e.14/2020/styczeń/E.14-03-20.01-SG/) (JS)
+	* czerwiec
+		* [E.14-01-20.06-SG](egzaminy/e.14/2020/czerwiec/E.14-01-20.06-SG/) (JS)

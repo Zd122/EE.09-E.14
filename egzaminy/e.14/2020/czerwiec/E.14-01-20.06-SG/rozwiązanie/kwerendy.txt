@@ -1,0 +1,8 @@
+kw1:
+    SELECT `farby`.`cena` FROM `farby` WHERE `farby`.`kolor` = "niebieski";
+
+kw2:
+    SELECT `farby`.`kolor`, `farby`.`cena`/`pojemnosc` FROM `farby`;
+
+kw3:
+    SELECT `farby`.`kolor` FROM `farby`, `malowanie` WHERE `malowanie`.`id_farby` = `farby`.`id_farby` AND `malowanie`.`id_pomieszczenia` = 3;

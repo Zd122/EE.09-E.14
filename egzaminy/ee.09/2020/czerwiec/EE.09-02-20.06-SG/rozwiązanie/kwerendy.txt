@@ -1,0 +1,11 @@
+kw1:
+    SELECT `wycieczki`.`id`, `wycieczki`.`dataWyjazdu`, `wycieczki`.`cel`, `wycieczki`.`cena` FROM `wycieczki` WHERE `wycieczki`.`dostepna` = TRUE;
+
+kw2:
+    SELECT `zdjecia`.`nazwaPliku`, `zdjecia`.`podpis` FROM `zdjecia` ORDER BY `zdjecia`.`podpis` ASC;
+
+kw3:
+    SELECT `zdjecia`.`nazwaPliku`, `wycieczki`.`cel` FROM `zdjecia`, `wycieczki` WHERE `wycieczki`.`zdjecia_id` = `zdjecia`.`id` AND `wycieczki`.`cena` > 1000;
+
+kw4:
+    ALTER TABLE `wycieczki` ADD `dataPrzyjazdu` DATE AFTER `dataWyjazdu`;

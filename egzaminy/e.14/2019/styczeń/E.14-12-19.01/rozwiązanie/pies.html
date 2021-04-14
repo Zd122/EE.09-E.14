@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nasze zdjęcia</title>
+
+        <link rel="stylesheet" href="styl6.css">
+    </head>
+    <body>
+
+        <div id="banner">
+            <h2>Nasze psy</h2>
+        </div>
+
+        <div id="cont-left">
+            <h1>Wybierz</h1>
+            <ul>
+                <li><a href="pies.html">Psy</a></li>
+                <li><a href="kot.html">Koty</a></li>
+                <li>Konie</li>
+                <li>Rybki</li>
+                <li>Inne zdjęcia</li>
+            </ul>
+            <h5><a href="index.html">Do strony głównej</a></h5>
+        </div>
+
+        <div id="cont-rt">
+            <h2>Kliknij na zdjęcie</h2>
+            <img id="pies1" src="pies1.jpg" alt="psy" onclick="change(1, 3)" onmouseover="change(1, 1)" onmouseout="change(1, 2)">
+            <img id="pies2" src="pies2.jpg" alt="psy" onclick="change(2, 3)" onmouseover="change(2, 1)" onmouseout="change(2, 2)">
+            <img id="pies3" src="pies3.jpg" alt="psy" onclick="change(3, 3)" onmouseover="change(3, 1)" onmouseout="change(3, 2)">
+        </div>
+
+        <div id="cont-rb">
+            <p><img src="pies2.jpg" alt="Wybrany pies" id="res"></p>
+        </div>
+        
+        <div id="footer">
+            <p>Galerię zdjęć opracował: <b>0125******* (Kozicki Paweł)</b></p>
+        </div>
+
+        <script>
+
+            function change(n, a){
+
+                if(a == 1){
+                    document.getElementById("pies" + n).src = "pies" + n + "-odbicie.jpg";
+                }else if(a == 2){
+                    document.getElementById("pies" + n).src = "pies" + n + ".jpg";
+                }
+                
+                if(a == 3){
+                    document.getElementById("res").src = "pies" + n + ".jpg";
+                    document.getElementById("pies" + n).src = "pies" + n + ".jpg";
+                }
+            }
+
+        </script>
+        
+    </body>
+</html>

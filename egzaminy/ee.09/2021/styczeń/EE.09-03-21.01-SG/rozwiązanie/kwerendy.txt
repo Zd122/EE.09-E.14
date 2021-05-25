@@ -1,0 +1,11 @@
+kw1:
+    SELECT `bmi`.`informacja`, `bmi`.`wart_min`, `bmi`.`wart_max` FROM `bmi`;
+
+kw2:
+    INSERT INTO `wynik` (`id`, `bmi_id`, `data_pomiaru`, `wynik`) VALUES (NULL, '3', '2020-05-10', '27');
+
+kw3:
+    SELECT `wynik`.`wynik`, `wynik`.`data_pomiaru`, `bmi`.`informacja` FROM `wynik`, `bmi` WHERE `wynik`.`bmi_id` = `bmi`.`id`;
+
+kw4:
+    SELECT `bmi`.`wart_min`, `bmi`.`wart_max` FROM `bmi` WHERE `bmi`.`informacja` = "nadwaga";

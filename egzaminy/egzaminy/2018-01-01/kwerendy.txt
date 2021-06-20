@@ -1,0 +1,11 @@
+kw1:
+    SELECT `ogloszenie`.`id`, `ogloszenie`.`tytul`, `ogloszenie`.`tresc` FROM `ogloszenie` WHERE `ogloszenie`.`kategoria` = 1;
+
+kw2: 
+    SELECT `uzytkownik`.`telefon` FROM `uzytkownik`, `ogloszenie` WHERE `uzytkownik`.`id` = `ogloszenie`.`uzytkownik_id` AND `ogloszenie`.`id` = 1;
+
+kw3:
+    CREATE USER 'moderator'@'localhost' IDENTIFIED VIA mysql_native_password USING '***';GRANT USAGE ON *.* TO 'moderator'@'%' REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;GRANT ALL PRIVILEGES ON `ogloszenia`.* TO 'moderator'@'%';
+
+kw4:
+    REVOKE ALL PRIVILEGES ON `ogloszenia`.* FROM 'moderator'@'%'; GRANT SELECT, DELETE ON `ogloszenia`.* TO 'moderator'@'%';

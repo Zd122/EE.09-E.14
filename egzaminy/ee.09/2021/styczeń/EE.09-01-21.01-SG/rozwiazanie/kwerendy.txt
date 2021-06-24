@@ -1,0 +1,11 @@
+kw1:
+    SELECT `rozgrywka`.`zespol1`, `rozgrywka`.`zespol2`, `rozgrywka`.`wynik`, `rozgrywka`.`data_rozgrywki` FROM `rozgrywka` WHERE `rozgrywka`.`zespol1` = "EVG";
+
+kw2:
+    SELECT `zawodnik`.`imie`, `zawodnik`.`nazwisko` FROM `zawodnik` WHERE `zawodnik`.`pozycja_id` = 3;
+
+kw3:
+    SELECT `zawodnik`.`id`, `zawodnik`.`nazwisko`, `pozycja`.`nazwa` FROM `zawodnik`, `pozycja` WHERE `zawodnik`.`id` = 1 OR `zawodnik`.`id` = 2 OR `zawodnik`.`id` = 3;
+
+kw4:
+    DROP TABLE `egzamin`.`liga`;

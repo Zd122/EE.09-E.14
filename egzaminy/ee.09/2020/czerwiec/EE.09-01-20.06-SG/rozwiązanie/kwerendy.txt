@@ -1,0 +1,11 @@
+kw1:
+    SELECT `zadania`.`dataZadania`, `zadania`.`miesiac`, `zadania`.`wpis` FROM `zadania` WHERE `zadania`.`miesiac` = "sierpien";
+
+kw2:
+    SELECT `zadania`.`miesiac`, `zadania`.`rok` FROM `zadania` WHERE `zadania`.`dataZadania` = "2020-08-01";
+
+kw3:
+    SELECT DISTINCT `zadania`.`wpis` FROM `zadania` WHERE `zadania`.`wpis` LIKE "%o";
+
+kw4:
+    UPDATE `zadania` SET `wpis` = 'Wycieczka: Karkonosze' WHERE `zadania`.`dataZadania` = "2020-08-27";

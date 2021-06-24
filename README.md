@@ -6,20 +6,20 @@ Rozwiązane egzaminy EE.09 i E.14
 ## Egzaminy EE.09     EE.09-03-21.01-SG
 * 2019
 	* czerwiec
-		* [EE.09-01-19.06](egzaminy/ee.09/2019/czerwiec/EE.09-01-19.06/) (PHP)
-		* [EE.09-02-19.06](egzaminy/ee.09/2019/czerwiec/EE.09-02-19.06/) (JS)
-		* [EE.09-03-19.06](egzaminy/ee.09/2019/czerwiec/EE.09-03-19.06/) (PHP)
-		* [EE.09-04-19.06](egzaminy/ee.09/2019/czerwiec/EE.09-04-19.06/) (JS)
-		* [EE.09-05-19.06](egzaminy/ee.09/2019/czerwiec/EE.09-05-19.06/) (JS)
-		* [EE.09-06-19.06](egzaminy/ee.09/2019/czerwiec/EE.09-06-19.06/) (PHP)
+		* [EE.09-01-19.06](egzaminy/ee.09/2019/czerwiec/EE.09-01-19.06/) (PHP, GIMP)
+		* [EE.09-02-19.06](egzaminy/ee.09/2019/czerwiec/EE.09-02-19.06/) (JS, GIMP)
+		* [EE.09-03-19.06](egzaminy/ee.09/2019/czerwiec/EE.09-03-19.06/) (PHP, GIMP)
+		* [EE.09-04-19.06](egzaminy/ee.09/2019/czerwiec/EE.09-04-19.06/) (JS, GIMP)
+		* [EE.09-05-19.06](egzaminy/ee.09/2019/czerwiec/EE.09-05-19.06/) (JS, GIMP)
+		* [EE.09-06-19.06](egzaminy/ee.09/2019/czerwiec/EE.09-06-19.06/) (PHP, GIMP)
 * 2020
 	* czerwiec
-		* ~~[EE.09-01-20.06-SG](egzaminy/ee.09/2020/czerwiec/EE.09-01-20.06-SG/)~~ [BRAK PLIKÓW]
-		* [EE.09-02-20.06-SG](egzaminy/ee.09/2020/czerwiec/EE.09-02-20.06-SG/) (PHP)
-		* [EE.09-03-20.06-SG](egzaminy/ee.09/2020/czerwiec/EE.09-03-20.06-SG/) (PHP)
-		* [EE.09-04-20.06-SG](egzaminy/ee.09/2020/czerwiec/EE.09-04-20.06-SG/) (JS)
-		* [EE.09-05-20.06-SG](egzaminy/ee.09/2020/czerwiec/EE.09-05-20.06-SG/) (JS)
-		* [EE.09-06-20.06-SG](egzaminy/ee.09/2020/czerwiec/EE.09-06-20.06-SG/) (PHP)
+		* [EE.09-01-20.06-SG](egzaminy/ee.09/2020/czerwiec/EE.09-01-20.06-SG/) (PHP, GIMP)
+		* [EE.09-02-20.06-SG](egzaminy/ee.09/2020/czerwiec/EE.09-02-20.06-SG/) (PHP, GIMP)
+		* [EE.09-03-20.06-SG](egzaminy/ee.09/2020/czerwiec/EE.09-03-20.06-SG/) (PHP, GIMP)
+		* [EE.09-04-20.06-SG](egzaminy/ee.09/2020/czerwiec/EE.09-04-20.06-SG/) (JS, GIMP)
+		* [EE.09-05-20.06-SG](egzaminy/ee.09/2020/czerwiec/EE.09-05-20.06-SG/) (JS, GIMP)
+		* [EE.09-06-20.06-SG](egzaminy/ee.09/2020/czerwiec/EE.09-06-20.06-SG/) (PHP, GIMP)
 * 2021
 	* styczeń
 		* [EE.09-03-21.01-SG](egzaminy/ee.09/2021/styczeń/EE.09-03-21.01-SG/) (PHP)

@@ -22,7 +22,8 @@ Rozwiązane egzaminy EE.09 i E.14
 		* [EE.09-06-20.06-SG](egzaminy/ee.09/2020/czerwiec/EE.09-06-20.06-SG/) (PHP, GIMP)
 * 2021
 	* styczeń
-		* [EE.09-03-21.01-SG](egzaminy/ee.09/2021/styczeń/EE.09-03-21.01-SG/) (PHP)
+		* [EE.09-01-21.01-SG](egzaminy/ee.09/2021/styczeń/EE.09-01-21.01-SG/) (PHP, GIMP)
+		* [EE.09-03-21.01-SG](egzaminy/ee.09/2021/styczeń/EE.09-03-21.01-SG/) (PHP, GIMP)
 
 
 ## Egzaminy E.14

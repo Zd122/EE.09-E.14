@@ -1,5 +1,5 @@
 # EE.09 i E.14
-Rozwiązane egzaminy EE.09 i E.14
+Rozwiązane przeze mnie egzaminy EE.09 i E.14
 
 ---
 
